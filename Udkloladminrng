@@ -1,0 +1,1644 @@
+local syn = getgenv().syn
+getgenv().syn = false
+
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()local Window = OrionLib:MakeWindow({Name = "JLhub", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})local Tab = Window:MakeTab({
+	Name = "auto spin",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+}) Tab:AddButton({
+	Name = "auto roll (no pop up)",
+	Callback = function()
+      		_G.toggle = true
+
+while _G.toggle do
+wait( )
+local args = {
+    [1] = false,
+    [2] = false
+}
+
+game:GetService("ReplicatedStorage").Events.Spin:InvokeServer(unpack(args))
+
+end
+  	end    
+}) Tab:AddButton({
+	Name = "auto dubble roll",
+	Callback = function()
+      		_G.Spin = true
+
+spawn(function( )
+while _G.Spin == true do
+local args = {
+    [1] = true,
+    [2] = true
+}
+
+game:GetService("ReplicatedStorage").Events.Spin:InvokeServer(unpack(args))
+wait( )
+end
+end)
+  	end    
+}) Tab:AddButton({
+	Name = "stop auto dubble roll",
+	Callback = function()
+      		_G.Spin = false
+  	end    
+}) Tab:AddButton({
+	Name = "stop auto roll",
+	Callback = function()
+      		_G.toggle = false
+
+while _G.toggle do
+wait( )
+local args = {
+    [1] = false,
+    [2] = false
+}
+
+game:GetService("ReplicatedStorage").Events.Spin:InvokeServer(unpack(args))
+
+end
+  	end    
+}) local Tab = Window:MakeTab({
+	Name = "/all gamepass",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+}) Tab:AddButton({
+	Name = "stop end server",
+	Callback = function()
+      		_G.PanelTrigger = false
+  	end    
+}) Tab:AddButton({
+	Name = "end server",
+	Callback = function()
+      		loadstring(game:HttpGet("https://pastefy.app/KE2vnJkb/raw"))()
+
+  	end    
+}) Tab:AddButton({
+	Name = "end server (no fling)",
+	Callback = function()
+      		loadstring(game:HttpGet("https://pastefy.app/NGo6ebyD/raw"))()
+  	end    
+}) Tab:AddButton({
+	Name = "end server no visions",
+	Callback = function()
+      		loadstring(game:HttpGet("https://pastefy.app/sifoNx5C/raw"))()
+  	end    
+}) local Tab = Window:MakeTab({
+	Name = "choas",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+}) Tab:AddButton({
+	Name = "stop choas",
+	Callback = function()
+      		_G.PanelTrigger = false
+  	end    
+}) Tab:AddButton({
+	Name = "start choas",
+	Callback = function()
+      		loadstring(game:HttpGet("https://pastefy.app/IaezhQgS/raw"))()
+  	end    
+}) local Tab = Window:MakeTab({
+	Name = "auto god",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})  Tab:AddButton({
+	Name = "auto god",
+	Callback = function()
+      		_G.toggle = true
+
+while _G.toggle do
+wait(1)
+local args = {
+    [1] = "/god",
+    [2] = "me"
+}
+
+game:GetService("ReplicatedStorage").Events.PanelTrigger:FireServer(unpack(args))
+end
+
+  	end    
+}) Tab:AddButton({
+	Name = "turn off auto god",
+	Callback = function()
+      		_G.toggle = false
+while _G.toggle do
+wait( )
+local args = {
+    [1] = "/god",
+    [2] = "me"
+}
+
+game:GetService("ReplicatedStorage").Events.PanelTrigger:FireServer(unpack(args))
+end
+  	end    
+}) local Tab = Window:MakeTab({
+	Name = "sound effects p2w",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+}) Tab:AddButton({
+	Name = "stop all sfx",
+	Callback = function()
+      		_G.PanelTrigger = false
+  	end    
+}) Tab:AddButton({
+	Name = "spam all sfx",
+	Callback = function()
+      		_G.PanelTrigger = true
+
+spawn(function( )
+while _G.PanelTrigger == true do
+local args = {
+    [1] = "/raintacos",
+    [2] = "all"
+}
+
+game:GetService("ReplicatedStorage").Events.PanelTrigger:FireServer(unpack(args))
+
+wait( )
+end
+end)
+
+spawn(function( )
+while _G.PanelTrigger == true do
+local args = {
+    [1] = "/imposter",
+    [2] = "others"
+}
+
+game:GetService("ReplicatedStorage").Events.PanelTrigger:FireServer(unpack(args))
+
+wait( )
+end
+end)
+
+spawn(function( )
+while _G.PanelTrigger == true do
+local args = {
+    [1] = "/bruh",
+    [2] = "others"
+}
+
+game:GetService("ReplicatedStorage").Events.PanelTrigger:FireServer(unpack(args))
+
+wait( )
+end
+end)
+
+spawn(function( )
+while _G.PanelTrigger == true do
+local args = {
+    [1] = "/poof",
+    [2] = "others"
+}
+
+game:GetService("ReplicatedStorage").Events.PanelTrigger:FireServer(unpack(args))
+
+wait( )
+end
+end)
+
+spawn(function( )
+while _G.PanelTrigger == true do
+local args = {
+    [1] = "/sneeze",
+    [2] = "others"
+}
+
+game:GetService("ReplicatedStorage").Events.PanelTrigger:FireServer(unpack(args))
+
+wait( )
+end
+end)
+  	end    
+}) Tab:AddButton({
+	Name = "spam tacos",
+	Callback = function()
+      		_G.PanelTrigger = true
+
+spawn(function( )
+while _G.PanelTrigger == true do
+local args = {
+    [1] = "/raintacos",
+    [2] = "all"
+}
+
+game:GetService("ReplicatedStorage").Events.PanelTrigger:FireServer(unpack(args))
+
+wait( )
+end
+end)
+
+  	end    
+}) Tab:AddButton({
+	Name = "spam fart",
+	Callback = function()
+      		_G.PanelTrigger = true
+
+spawn(function( )
+while _G.PanelTrigger == true do
+local args = {
+    [1] = "/poof",
+    [2] = "others"
+}
+
+game:GetService("ReplicatedStorage").Events.PanelTrigger:FireServer(unpack(args))
+
+wait( )
+end
+end)
+  	end    
+}) Tab:AddButton({
+	Name = "spam amongus",
+	Callback = function()
+      		_G.PanelTrigger = true
+
+spawn(function( )
+while _G.PanelTrigger == true do
+local args = {
+    [1] = "/imposter",
+    [2] = "others"
+}
+
+game:GetService("ReplicatedStorage").Events.PanelTrigger:FireServer(unpack(args))
+
+
+wait( )
+end
+end)
+  	end    
+}) Tab:AddButton({
+	Name = "spam sneeze",
+	Callback = function()
+      		_G.PanelTrigger = true
+
+spawn(function( )
+while _G.PanelTrigger == true do
+local args = {
+    [1] = "/sneeze",
+    [2] = "others"
+}
+
+game:GetService("ReplicatedStorage").Events.PanelTrigger:FireServer(unpack(args))
+
+
+wait( )
+end
+end)
+  	end    
+}) Tab:AddButton({
+	Name = "spam bruh",
+	Callback = function()
+      		_G.PanelTrigger = true
+
+spawn(function( )
+while _G.PanelTrigger == true do
+local args = {
+    [1] = "/bruh",
+    [2] = "others"
+}
+
+game:GetService("ReplicatedStorage").Events.PanelTrigger:FireServer(unpack(args))
+
+
+wait( )
+end
+end)
+  	end    
+}) local Tab = Window:MakeTab({
+	Name = "spam sfx f2p",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+}) Tab:AddButton({
+	Name = "turn off spam sfx",
+	Callback = function()
+      		_G.PanelTrigger = false
+  	end    
+}) Tab:AddButton({
+	Name = "spam all sfx random",
+	Callback = function()
+      		_G.PanelTrigger = true
+
+spawn(function( )
+while _G.PanelTrigger == true do
+local args = {
+    [1] = "/raintacos",
+    [2] = "random"
+}
+
+game:GetService("ReplicatedStorage").Events.PanelTrigger:FireServer(unpack(args))
+
+wait(0)
+end
+end)
+
+spawn(function( )
+while _G.PanelTrigger == true do
+local args = {
+    [1] = "/imposter",
+    [2] = "random"
+}
+
+game:GetService("ReplicatedStorage").Events.PanelTrigger:FireServer(unpack(args))
+
+wait(0)
+end
+end)
+
+spawn(function( )
+while _G.PanelTrigger == true do
+local args = {
+    [1] = "/bruh",
+    [2] = "random"
+}
+
+game:GetService("ReplicatedStorage").Events.PanelTrigger:FireServer(unpack(args))
+
+wait(0)
+end
+end)
+
+spawn(function( )
+while _G.PanelTrigger == true do
+local args = {
+    [1] = "/poof",
+    [2] = "random"
+}
+
+game:GetService("ReplicatedStorage").Events.PanelTrigger:FireServer(unpack(args))
+
+wait(0)
+end
+end)
+
+spawn(function( )
+while _G.PanelTrigger == true do
+local args = {
+    [1] = "/sneeze",
+    [2] = "random"
+}
+
+game:GetService("ReplicatedStorage").Events.PanelTrigger:FireServer(unpack(args))
+
+wait(0)
+end
+end)
+  	end    
+}) Tab:AddButton({
+	Name = "spam sneeze random",
+	Callback = function()
+      		spawn(function( )
+      		_G.PanelTrigger = true
+
+while _G.PanelTrigger == true do
+local args = {
+    [1] = "/sneeze",
+    [2] = "random"
+}
+
+game:GetService("ReplicatedStorage").Events.PanelTrigger:FireServer(unpack(args))
+
+wait(0)
+end
+end)
+  	end    
+}) Tab:AddButton({
+	Name = "spam fart random",
+	Callback = function()
+      		spawn(function( )
+      		_G.PanelTrigger = true
+
+while _G.PanelTrigger == true do
+local args = {
+    [1] = "/poof",
+    [2] = "random"
+}
+
+game:GetService("ReplicatedStorage").Events.PanelTrigger:FireServer(unpack(args))
+
+wait(0)
+end
+end)
+  	end    
+}) Tab:AddButton({
+	Name = "spam rain tacos random",
+	Callback = function()
+      		spawn(function( )
+      		_G.PanelTrigger = true
+
+while _G.PanelTrigger == true do
+local args = {
+    [1] = "/raintacos",
+    [2] = "random"
+}
+
+game:GetService("ReplicatedStorage").Events.PanelTrigger:FireServer(unpack(args))
+
+wait(0)
+end
+end)
+  	end    
+}) Tab:AddButton({
+	Name = "spam amongus all",
+	Callback = function()
+      		spawn(function( )
+      		_G.PanelTrigger = true
+
+while _G.PanelTrigger == true do
+local args = {
+    [1] = "/imposter",
+    [2] = "random"
+}
+
+game:GetService("ReplicatedStorage").Events.PanelTrigger:FireServer(unpack(args))
+
+wait(0)
+end
+end)
+  	end    
+}) Tab:AddButton({
+	Name = "spam bruh random",
+	Callback = function()
+      		spawn(function( )
+      		_G.PanelTrigger = true
+while _G.PanelTrigger == true do
+local args = {
+    [1] = "/bruh",
+    [2] = "random"
+}
+
+game:GetService("ReplicatedStorage").Events.PanelTrigger:FireServer(unpack(args))
+
+wait(0)
+end
+end)
+
+  	end    
+}) local Tab = Window:MakeTab({
+	Name = "spawn stuff p2w",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+}) Tab:AddButton({
+	Name = "stop spawning stuff",
+	Callback = function()
+      		_G.PanelTrigger = false
+  	end    
+}) Tab:AddButton({
+	Name = "spawn everything others",
+	Callback = function()
+      		_G.PanelTrigger = true
+
+spawn(function( )
+while _G.PanelTrigger == true do
+local args = {
+    [1] = "/trap",
+    [2] = "others"
+}
+
+game:GetService("ReplicatedStorage").Events.PanelTrigger:FireServer(unpack(args))
+
+wait( )
+end
+end)
+
+spawn(function( )
+while _G.PanelTrigger == true do
+local args = {
+    [1] = "/cactus",
+    [2] = "others"
+}
+
+game:GetService("ReplicatedStorage").Events.PanelTrigger:FireServer(unpack(args))
+
+wait( )
+end
+end)
+
+spawn(function( )
+while _G.PanelTrigger == true do
+local args = {
+    [1] = "/tree",
+    [2] = "others"
+}
+
+game:GetService("ReplicatedStorage").Events.PanelTrigger:FireServer(unpack(args))
+
+wait( )
+end
+end)
+
+spawn(function( )
+while _G.PanelTrigger == true do
+local args = {
+    [1] = "/bush",
+    [2] = "others"
+}
+
+game:GetService("ReplicatedStorage").Events.PanelTrigger:FireServer(unpack(args))
+
+wait( )
+end
+end)
+  	end    
+}) Tab:AddButton({
+	Name = "spam trap others",
+	Callback = function()
+      		_G.PanelTrigger = true
+
+spawn(function( )
+while _G.PanelTrigger == true do
+local args = {
+    [1] = "/trap",
+    [2] = "others"
+}
+
+game:GetService("ReplicatedStorage").Events.PanelTrigger:FireServer(unpack(args))
+
+wait(0)
+end
+end)
+
+  	end    
+}) Tab:AddButton({
+	Name = "spam cactus others",
+	Callback = function()
+      		_G.PanelTrigger = true
+
+spawn(function( )
+while _G.PanelTrigger == true do
+local args = {
+    [1] = "/cactus",
+    [2] = "others"
+}
+
+game:GetService("ReplicatedStorage").Events.PanelTrigger:FireServer(unpack(args))
+
+wait(0)
+end
+end)
+  	end    
+}) Tab:AddButton({
+	Name = "spam tree others",
+	Callback = function()
+      		_G.PanelTrigger = true
+
+spawn(function( )
+while _G.PanelTrigger == true do
+local args = {
+    [1] = "/tree",
+    [2] = "others"
+}
+
+game:GetService("ReplicatedStorage").Events.PanelTrigger:FireServer(unpack(args))
+
+wait(0)
+end
+end)
+  	end    
+}) Tab:AddButton({
+	Name = "spam bush others",
+	Callback = function()
+      		_G.PanelTrigger = true
+
+spawn(function( )
+while _G.PanelTrigger == true do
+local args = {
+    [1] = "/bush",
+    [2] = "others"
+}
+
+game:GetService("ReplicatedStorage").Events.PanelTrigger:FireServer(unpack(args))
+
+wait(0)
+end
+end)
+  	end    
+}) local Tab = Window:MakeTab({
+	Name = "spawn stuff f2p",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+}) Tab:AddButton({
+	Name = "turn off auto spam random",
+	Callback = function()
+      		_G.PanelTrigger = false
+  	end    
+}) Tab:AddButton({
+	Name = "spam all random",
+	Callback = function()
+      		_G.PanelTrigger = true
+
+spawn(function( )
+while _G.PanelTrigger == true do
+local args = {
+    [1] = "/trap",
+    [2] = "random"
+}
+
+game:GetService("ReplicatedStorage").Events.PanelTrigger:FireServer(unpack(args))
+
+wait( )
+end
+end)
+
+spawn(function( )
+while _G.PanelTrigger == true do
+local args = {
+    [1] = "/cactus",
+    [2] = "random"
+}
+
+game:GetService("ReplicatedStorage").Events.PanelTrigger:FireServer(unpack(args))
+
+wait( )
+end
+end)
+
+spawn(function( )
+while _G.PanelTrigger == true do
+local args = {
+    [1] = "/tree",
+    [2] = "random"
+}
+
+game:GetService("ReplicatedStorage").Events.PanelTrigger:FireServer(unpack(args))
+
+wait( )
+end
+end)
+
+spawn(function( )
+while _G.PanelTrigger == true do
+local args = {
+    [1] = "/bush",
+    [2] = "random"
+}
+
+game:GetService("ReplicatedStorage").Events.PanelTrigger:FireServer(unpack(args))
+
+wait( )
+end
+end)
+  	end    
+}) Tab:AddButton({
+	Name = "spam trap random",
+	Callback = function()
+      		_G.PanelTrigger = true
+
+spawn(function( )
+while _G.PanelTrigger == true do
+local args = {
+    [1] = "/trap",
+    [2] = "others"
+}
+
+game:GetService("ReplicatedStorage").Events.PanelTrigger:FireServer(unpack(args))
+
+wait(0)
+end
+end)
+  	end    
+}) Tab:AddButton({
+	Name = "spam cactus random",
+	Callback = function()
+      		_G.PanelTrigger = true
+
+spawn(function( )
+while _G.PanelTrigger == true do
+local args = {
+    [1] = "/cactus",
+    [2] = "others"
+}
+
+game:GetService("ReplicatedStorage").Events.PanelTrigger:FireServer(unpack(args))
+
+wait(0)
+end
+end)
+  	end    
+}) Tab:AddButton({
+	Name = "spam bush random",
+	Callback = function()
+      		_G.PanelTrigger = true
+
+spawn(function( )
+while _G.PanelTrigger == true do
+local args = {
+    [1] = "/bush",
+    [2] = "others"
+}
+
+game:GetService("ReplicatedStorage").Events.PanelTrigger:FireServer(unpack(args))
+
+wait( )
+end
+end)
+  	end    
+}) Tab:AddButton({
+	Name = "spam tree random",
+	Callback = function()
+      		_G.PanelTrigger = true
+
+spawn(function( )
+while _G.PanelTrigger == true do
+local args = {
+    [1] = "/tree",
+    [2] = "others"
+}
+
+game:GetService("ReplicatedStorage").Events.PanelTrigger:FireServer(unpack(args))
+
+wait(1)
+end
+end)
+  	end    
+}) local Tab = Window:MakeTab({
+	Name = "touch kill",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+}) Tab:AddButton({
+	Name = "virus (first)",
+	Callback = function()
+      		local args = {
+    [1] = "/virus",
+    [2] = "me"
+}
+
+game:GetService("ReplicatedStorage").Events.PanelTrigger:FireServer(unpack(args))
+
+  	end    
+}) Tab:AddButton({
+	Name = "second",
+	Callback = function()
+      		local args = {
+    [1] = "/god",
+    [2] = "me"
+}
+
+game:GetService("ReplicatedStorage").Events.PanelTrigger:FireServer(unpack(args))
+
+  	end    
+}) Tab:AddButton({
+	Name = "health others 1 (p2w)",
+	Callback = function()
+      		_G.PanelTrigger = true
+
+spawn(function( )
+while _G.PanelTrigger == true do
+local args = {
+    [1] = "/health",
+    [2] = "others",
+    [3] = 1
+}
+
+game:GetService("ReplicatedStorage").Events.PanelTrigger:FireServer(unpack(args))
+wait(1)
+end
+end)
+  	end    
+}) local Tab = Window:MakeTab({
+	Name = "antis",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+}) Tab:AddButton({
+	Name = "activate antis",
+	Callback = function()
+      		loadstring(game:HttpGet("https://pastefy.app/KtPpcndo/raw"))()
+  	end    
+}) Tab:AddButton({
+	Name = "anti fling",
+	Callback = function()
+      		loadstring(game:HttpGet(('https://pastebin.com/raw/GxdesRQx'),true))()
+
+  	end    
+}) Tab:AddButton({
+	Name = "antimeme",
+	Callback = function()
+      		while wait() do
+game.Players.LocalPlayer.PlayerGui.Memes:destroy()
+end
+  	end    
+}) Tab:AddButton({
+	Name = "anti nuke",
+	Callback = function()
+      		game.Players.LocalPlayer.PlayerScripts.Client.ClientModules.ClientCommands.NukeEvent:destroy()
+  	end    
+}) Tab:AddButton({
+	Name = "delete annoying cmds",
+	Callback = function()
+      		game.ReplicatedStorage.Events.Cmmd:Destroy()
+  	end    
+}) Tab:AddButton({
+	Name = "anti disable controls",
+	Callback = function()
+      		game.ReplicatedStorage.Events.ToggleControls:destroy()
+  	end    
+}) Tab:AddButton({
+	Name = "anti lock cam",
+	Callback = function()
+      		game.ReplicatedStorage.Events.LockCam:destroy()
+  	end    
+}) local Tab = Window:MakeTab({
+	Name = "remove stuff",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+}) Tab:AddButton({
+	Name = "remove cooldown noti",
+	Callback = function()
+      		game.ReplicatedStorage.Events.Notif:destroy()
+  	end    
+}) local Tab = Window:MakeTab({
+	Name = "kill cmds p2w",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+}) Tab:AddButton({
+	Name = "unauto kill others",
+	Callback = function()
+      		_G.PanelTrigger = false
+
+  	end    
+}) Tab:AddButton({
+	Name = "activate all kill commands",
+	Callback = function()
+      		loadstring(game:HttpGet("https://pastefy.app/DGVNmAt3/raw"))()
+  	end    
+}) Tab:AddButton({
+	Name = "auto hole others",
+	Callback = function()
+      		
+
+spawn(function( )
+while _G.PanelTrigger == true do
+local args = {
+    [1] = "/hole",
+    [2] = "others"
+}
+
+game:GetService("ReplicatedStorage").Events.PanelTrigger:FireServer(unpack(args))
+
+wait(1)
+end
+end)
+  	end    
+}) Tab:AddButton({
+	Name = "auto rocket others",
+	Callback = function()
+      		_G.PanelTrigger = true
+
+spawn(function( )
+while _G.PanelTrigger == true do
+local args = {
+    [1] = "/rocket",
+    [2] = "others"
+}
+
+game:GetService("ReplicatedStorage").Events.PanelTrigger:FireServer(unpack(args))
+
+wait(1)
+end
+end)
+  	end    
+}) Tab:AddButton({
+	Name = "auto lava others",
+	Callback = function()
+      		_G.PanelTrigger = true
+
+spawn(function( )
+while _G.PanelTrigger == true do
+local args = {
+    [1] = "/lava",
+    [2] = "others"
+}
+
+game:GetService("ReplicatedStorage").Events.PanelTrigger:FireServer(unpack(args))
+
+wait(1)
+end
+end)
+  	end    
+}) Tab:AddButton({
+	Name = "loop noob attack others",
+	Callback = function()
+      		_G.PanelTrigger = true
+
+spawn(function( )
+while _G.PanelTrigger == true do
+local args = {
+    [1] = "/noobattack",
+    [2] = "others"
+}
+
+game:GetService("ReplicatedStorage").Events.PanelTrigger:FireServer(unpack(args))
+
+wait(1)
+end
+end)
+  	end    
+}) Tab:AddButton({
+	Name = "auto nuke all",
+	Callback = function()
+      		_G.PanelTrigger = true
+
+spawn(function( )
+while _G.PanelTrigger == true do
+local args = {
+    [1] = "/nuke",
+    [2] = "others"
+}
+
+game:GetService("ReplicatedStorage").Events.PanelTrigger:FireServer(unpack(args))
+
+wait(1)
+end
+end)
+
+  	end    
+}) Tab:AddButton({
+	Name = "auto monster others",
+	Callback = function()
+      		_G.PanelTrigger = true
+
+spawn(function( )
+while _G.PanelTrigger == true do
+local args = {
+    [1] = "/monster",
+    [2] = "others"
+}
+
+game:GetService("ReplicatedStorage").Events.PanelTrigger:FireServer(unpack(args))
+
+wait(1)
+end
+end)
+  	end    
+}) Tab:AddButton({
+	Name = "auto poop others",
+	Callback = function()
+      		_G.PanelTrigger = true
+
+spawn(function( )
+while _G.PanelTrigger == true do
+local args = {
+    [1] = "/poop",
+    [2] = "others",
+    [3] = 999999
+}
+
+game:GetService("ReplicatedStorage").Events.PanelTrigger:FireServer(unpack(args))
+
+wait(1)
+end
+end)
+
+  	end    
+}) Tab:AddButton({
+	Name = "auto kill others",
+	Callback = function()
+      		_G.PanelTrigger = true
+
+spawn(function( )
+while _G.PanelTrigger == true do
+local args = {
+    [1] = "/kill",
+    [2] = "others"
+}
+
+game:GetService("ReplicatedStorage").Events.PanelTrigger:FireServer(unpack(args))
+wait(1)
+end
+end)
+  	end    
+}) Tab:AddButton({
+	Name = "auto explode others",
+	Callback = function()
+      		_G.PanelTrigger = true
+
+spawn(function( )
+while _G.PanelTrigger == true do
+local args = {
+    [1] = "/explode",
+    [2] = "others"
+}
+
+game:GetService("ReplicatedStorage").Events.PanelTrigger:FireServer(unpack(args))
+wait(1)
+end
+end)
+  	end    
+}) Tab:AddButton({
+	Name = "auto fling others",
+	Callback = function()
+      		_G.PanelTrigger = true
+
+spawn(function( )
+while _G.PanelTrigger == true do
+local args = {
+    [1] = "/fling",
+    [2] = "others"
+}
+
+game:GetService("ReplicatedStorage").Events.PanelTrigger:FireServer(unpack(args))
+wait(1)
+end
+end)
+  	end    
+}) Tab:AddButton({
+	Name = "auto smite all",
+	Callback = function()
+      		_G.PanelTrigger = true
+
+spawn(function( )
+while _G.PanelTrigger == true do
+local args = {
+    [1] = "/smite",
+    [2] = "others"
+}
+
+game:GetService("ReplicatedStorage").Events.PanelTrigger:FireServer(unpack(args))
+wait(1)
+end
+end)
+  	end    
+}) Tab:AddButton({
+	Name = "auto ufo others",
+	Callback = function()
+      		_G.PanelTrigger = true
+
+spawn(function( )
+while _G.PanelTrigger == true do
+local args = {
+    [1] = "/ufo",
+    [2] = "others"
+}
+
+game:GetService("ReplicatedStorage").Events.PanelTrigger:FireServer(unpack(args))
+
+wait(1)
+end
+end)
+  	end    
+}) local Tab = Window:MakeTab({
+	Name = "kill cmds f2p",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+}) Tab:AddButton({
+	Name = "stop auto kill random",
+	Callback = function()
+      		_G.PanelTrigger = false
+  	end    
+}) Tab:AddButton({
+	Name = "auto kill cmds random",
+	Callback = function()
+      		loadstring(game:HttpGet("https://pastefy.app/1fMe5yCf/raw"))()
+  	end    
+}) Tab:AddButton({
+	Name = "auto kill random",
+	Callback = function()
+      		_G.PanelTrigger = true
+
+spawn(function( )
+while _G.PanelTrigger == true do
+local args = {
+    [1] = "/kill",
+    [2] = "random"
+}
+
+game:GetService("ReplicatedStorage").Events.PanelTrigger:FireServer(unpack(args))
+wait(1)
+end
+end)
+  	end    
+}) Tab:AddButton({
+	Name = "auto explode random",
+	Callback = function()
+      		_G.PanelTrigger = true
+
+spawn(function( )
+while _G.PanelTrigger == true do
+local args = {
+    [1] = "/explode",
+    [2] = "random"
+}
+
+game:GetService("ReplicatedStorage").Events.PanelTrigger:FireServer(unpack(args))
+wait(1)
+end
+end)
+  	end    
+}) Tab:AddButton({
+	Name = "auto fling random",
+	Callback = function()
+      		_G.PanelTrigger = true
+
+spawn(function( )
+while _G.PanelTrigger == true do
+local args = {
+    [1] = "/fling",
+    [2] = "random"
+}
+
+game:GetService("ReplicatedStorage").Events.PanelTrigger:FireServer(unpack(args))
+wait(1)
+end
+end)
+  	end    
+}) Tab:AddButton({
+	Name = "auto smite random",
+	Callback = function()
+      		_G.PanelTrigger = true
+
+spawn(function( )
+while _G.PanelTrigger == true do
+local args = {
+    [1] = "/smite",
+    [2] = "random"
+}
+
+game:GetService("ReplicatedStorage").Events.PanelTrigger:FireServer(unpack(args))
+wait(1)
+end
+end)
+  	end    
+}) Tab:AddButton({
+	Name = "auto hole random",
+	Callback = function()
+      		_G.PanelTrigger = true
+
+spawn(function( )
+while _G.PanelTrigger == true do
+local args = {
+    [1] = "/hole",
+    [2] = "random"
+}
+
+game:GetService("ReplicatedStorage").Events.PanelTrigger:FireServer(unpack(args))
+wait(1)
+end
+end)
+  	end    
+}) Tab:AddButton({
+	Name = "auto rocket random",
+	Callback = function()
+      		_G.PanelTrigger = true
+
+spawn(function( )
+while _G.PanelTrigger == true do
+local args = {
+    [1] = "/rocket",
+    [2] = "random"
+}
+
+game:GetService("ReplicatedStorage").Events.PanelTrigger:FireServer(unpack(args))
+wait(1)
+end
+end)
+  	end    
+}) Tab:AddButton({
+	Name = "auto lava random",
+	Callback = function()
+      		_G.PanelTrigger = true
+
+spawn(function( )
+while _G.PanelTrigger == true do
+local args = {
+    [1] = "/lava",
+    [2] = "random"
+}
+
+game:GetService("ReplicatedStorage").Events.PanelTrigger:FireServer(unpack(args))
+wait(1)
+end
+end)
+  	end    
+}) Tab:AddButton({
+	Name = "auto noob attack random",
+	Callback = function()
+      		_G.PanelTrigger = true
+
+spawn(function( )
+while _G.PanelTrigger == true do
+local args = {
+    [1] = "/noobattack",
+    [2] = "random"
+}
+
+game:GetService("ReplicatedStorage").Events.PanelTrigger:FireServer(unpack(args))
+
+wait(1)
+end
+end)
+  	end    
+}) Tab:AddButton({
+	Name = "auto nuke random",
+	Callback = function()
+      		_G.PanelTrigger = true
+
+spawn(function( )
+while _G.PanelTrigger == true do
+local args = {
+    [1] = "/nuke",
+    [2] = "random"
+}
+
+game:GetService("ReplicatedStorage").Events.PanelTrigger:FireServer(unpack(args))
+wait(1)
+end
+end)
+  	end    
+}) Tab:AddButton({
+	Name = "auto monster random",
+	Callback = function()
+      		_G.PanelTrigger = true
+
+spawn(function( )
+while _G.PanelTrigger == true do
+local args = {
+    [1] = "/monster",
+    [2] = "random"
+}
+
+game:GetService("ReplicatedStorage").Events.PanelTrigger:FireServer(unpack(args))
+wait(1)
+end
+end)
+  	end    
+}) Tab:AddButton({
+	Name = "auto poop random",
+	Callback = function()
+      		_G.PanelTrigger = true
+
+spawn(function( )
+while _G.PanelTrigger == true do
+local args = {
+    [1] = "/poop",
+    [2] = "random",
+    [3] = 999999
+}
+
+game:GetService("ReplicatedStorage").Events.PanelTrigger:FireServer(unpack(args))
+wait(1)
+end
+end)
+  	end    
+}) Tab:AddButton({
+	Name = "Button!",
+	Callback = function()
+      		_G.PanelTrigger = true
+
+spawn(function( )
+while _G.PanelTrigger == true do
+local args = {
+    [1] = "/ufo",
+    [2] = "others"
+}
+
+game:GetService("ReplicatedStorage").Events.PanelTrigger:FireServer(unpack(args))
+
+wait(1)
+end
+end)
+  	end    
+}) local Tab = Window:MakeTab({
+	Name = "complete obby",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+}) Tab:AddButton({
+	Name = "complete easy obby",
+	Callback = function()
+      		loadstring(game:HttpGet("https://pastefy.app/lzWAMelw/raw"))()
+  	end    
+}) Tab:AddButton({
+	Name = "complete hard obby",
+	Callback = function()
+      		loadstring(game:HttpGet("https://pastefy.app/S9LGSR4C/raw"))()
+  	end    
+}) Tab:AddButton({
+	Name = "complete insane obby",
+	Callback = function()
+      		loadstring(game:HttpGet("https://pastefy.app/Gm2tPJVq/raw"))()
+  	end    
+}) local Tab = Window:MakeTab({
+	Name = "prevent fling",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+}) Tab:AddButton({
+	Name = "fly gui v3",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/XNEOFF/FlyGuiV3/main/FlyGuiV3.txt"))()
+  	end    
+}) Tab:AddButton({
+	Name = "tp back to map",
+	Callback = function()
+      		local teleport_table = {
+    location1 = Vector3.new(-447.7583312988281, 439.0288391113281, -0.2557697892189026), -- your desired position
+    location2 = Vector3.new(-447.7583312988281, 439.0288391113281, -0.2557697892189026)  -- your desired position
+}
+
+local tween_s = game:GetService('TweenService')
+local tweeninfo = TweenInfo.new(0,Enum.EasingStyle.Linear)
+
+local lp = game.Players.LocalPlayer
+
+function bypass_teleport(v)
+    if lp.Character and 
+    lp.Character:FindFirstChild('HumanoidRootPart') then
+        local cf = CFrame.new(v)
+        local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+        a:Play()
+        -- a.Completed:Wait()
+        -- print('Teleporting Done!')
+    end
+end
+
+bypass_teleport(teleport_table.location1)
+  	end    
+}) local Tab = Window:MakeTab({
+	Name = "auto obby",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+}) Tab:AddButton({
+	Name = "activate auto tp",
+	Callback = function()
+      		loadstring(game:HttpGet("https://pastefy.app/TFmkgBml/raw"))()
+  	end    
+}) Tab:AddButton({
+	Name = "auto trigger button",
+	Callback = function()
+      		_G.toggle = true
+while _G.toggle do
+wait(0.1)
+while task.wait(0.1) do for i,v in next, workspace:GetDescendants() do if v.IsA(v,'ProximityPrompt') then fireproximityprompt(v) end end end
+end
+  	end    
+}) Tab:AddButton({
+	Name = "stop auto tp",
+	Callback = function()
+      		_G.Tweening = false
+  	end    
+}) local Tab = Window:MakeTab({
+	Name = "rbg trail bugs",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+}) Tab:AddButton({
+	Name = "mega rbg trail optionn 1",
+	Callback = function()
+      		loadstring(game:HttpGet("https://pastefy.app/1PKFbOmE/raw"))()
+  	end    
+}) Tab:AddButton({
+	Name = "mega rbg trail  option 2",
+	Callback = function()
+      		loadstring(game:HttpGet("https://pastefy.app/Wx79CsQD/raw"))()
+  	end    
+}) Tab:AddButton({
+	Name = "mega rbg trail option 3",
+	Callback = function()
+      		loadstring(game:HttpGet("https://pastefy.app/b3huRIvr/raw"))()
+  	end    
+}) Tab:AddButton({
+	Name = "mega rbg trail option 4",
+	Callback = function()
+      		loadstring(game:HttpGet("https://pastefy.app/nxPQnyup/raw"))()
+  	end    
+}) Tab:AddButton({
+	Name = "cheapest mega rbg trick",
+	Callback = function()
+      		loadstring(game:HttpGet("https://pastefy.app/MjK5lntX/raw"))()
+  	end    
+}) local Tab = Window:MakeTab({
+	Name = "troll ppl",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+}) Tab:AddButton({
+	Name = "gravity 0 + slap + trail",
+	Callback = function()
+      		local args = {
+    [1] = "/gravity",
+    [2] = "others",
+    [3] = 0
+}
+
+game:GetService("ReplicatedStorage").Events.PanelTrigger:FireServer(unpack(args))
+local args = {
+    [1] = "/slap",
+    [2] = "others"
+}
+
+game:GetService("ReplicatedStorage").Events.PanelTrigger:FireServer(unpack(args))
+local args = {
+    [1] = "/trail",
+    [2] = "others"
+}
+
+game:GetService("ReplicatedStorage").Events.PanelTrigger:FireServer(unpack(args))
+
+  	end    
+}) Tab:AddButton({
+	Name = "slap + trail + kill",
+	Callback = function()
+      		local args = {
+    [1] = "/slap",
+    [2] = "others"
+}
+
+game:GetService("ReplicatedStorage").Events.PanelTrigger:FireServer(unpack(args))
+local args = {
+    [1] = "/trail",
+    [2] = "others"
+}
+
+game:GetService("ReplicatedStorage").Events.PanelTrigger:FireServer(unpack(args))
+local args = {
+    [1] = "/kill",
+    [2] = "others"
+}
+
+game:GetService("ReplicatedStorage").Events.PanelTrigger:FireServer(unpack(args))
+
+  	end    
+}) Tab:AddButton({
+	Name = "trail + jumppower + jump + gravity",
+	Callback = function()
+      		local args = {
+    [1] = "/jump",
+    [2] = "others"
+}
+
+game:GetService("ReplicatedStorage").Events.PanelTrigger:FireServer(unpack(args))
+local args = {
+    [1] = "/jumppower",
+    [2] = "others",
+    [3] = 9999999999
+}
+
+game:GetService("ReplicatedStorage").Events.PanelTrigger:FireServer(unpack(args))
+local args = {
+    [1] = "/gravity",
+    [2] = "others",
+    [3] = 0
+}
+
+game:GetService("ReplicatedStorage").Events.PanelTrigger:FireServer(unpack(args))
+local args = {
+    [1] = "/trail",
+    [2] = "others"
+}
+
+game:GetService("ReplicatedStorage").Events.PanelTrigger:FireServer(unpack(args))
+
+  	end    
+}) Tab:AddButton({
+	Name = "zoom others 0",
+	Callback = function()
+      		local args = {
+    [1] = "/zoom",
+    [2] = "others",
+    [3] = 0
+}
+
+game:GetService("ReplicatedStorage").Events.PanelTrigger:FireServer(unpack(args))
+
+  	end    
+}) local Tab = Window:MakeTab({
+	Name = "loop trolls",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+}) Tab:AddButton({
+	Name = "loop zoom others",
+	Callback = function()
+      		_G.PanelTrigger = true
+
+spawn(function( )
+while _G.PanelTrigger == true do
+local args = {
+    [1] = "/zoom",
+    [2] = "others",
+    [3] = 0
+}
+
+game:GetService("ReplicatedStorage").Events.PanelTrigger:FireServer(unpack(args))
+
+wait(1)
+end
+end)
+  	end    
+}) Tab:AddButton({
+	Name = "loo send ppl to heaven",
+	Callback = function()
+      		_G.PanelTrigger = true
+
+spawn(function( )
+while _G.PanelTrigger == true do
+local args = {
+    [1] = "/jump",
+    [2] = "others"
+}
+
+game:GetService("ReplicatedStorage").Events.PanelTrigger:FireServer(unpack(args))
+local args = {
+    [1] = "/jumppower",
+    [2] = "others",
+    [3] = 9999999999
+}
+
+game:GetService("ReplicatedStorage").Events.PanelTrigger:FireServer(unpack(args))
+local args = {
+    [1] = "/gravity",
+    [2] = "others",
+    [3] = 0
+}
+
+game:GetService("ReplicatedStorage").Events.PanelTrigger:FireServer(unpack(args))
+local args = {
+    [1] = "/trail",
+    [2] = "others"
+}
+
+game:GetService("ReplicatedStorage").Events.PanelTrigger:FireServer(unpack(args))
+
+wait(1)
+end
+end)
+  	end    
+}) local Tab = Window:MakeTab({
+	Name = "use all cmds",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+}) Tab:AddButton({
+	Name = "trigger all",
+	Callback = function()
+      		loadstring(game:HttpGet("https://pastefy.app/0jbwF70T/raw"))()
+  	end    
+}) local Tab = Window:MakeTab({
+	Name = "break stuff",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+}) Tab:AddButton({
+	Name = "break chair",
+	Callback = function()
+      		local args = {
+    [1] = "/chair",
+    [2] = "others"
+}
+
+game:GetService("ReplicatedStorage").Events.PanelTrigger:FireServer(unpack(args))
+local args = {
+    [1] = "/chicken",
+    [2] = "others"
+}
+
+game:GetService("ReplicatedStorage").Events.PanelTrigger:FireServer(unpack(args))
+
+  	end    
+}) Tab:AddButton({
+	Name = "break batman",
+	Callback = function()
+      		local args = {
+    [1] = "/chicken",
+    [2] = "others"
+}
+
+game:GetService("ReplicatedStorage").Events.PanelTrigger:FireServer(unpack(args))
+local args = {
+    [1] = "/batman",
+    [2] = "others"
+}
+
+game:GetService("ReplicatedStorage").Events.PanelTrigger:FireServer(unpack(args))
+
+  	end    
+}) Tab:AddButton({
+	Name = "break ufo",
+	Callback = function()
+      		local args = {
+    [1] = "/ufo",
+    [2] = "others"
+}
+
+game:GetService("ReplicatedStorage").Events.PanelTrigger:FireServer(unpack(args))
+local args = {
+    [1] = "/chicken",
+    [2] = "others"
+}
+
+game:GetService("ReplicatedStorage").Events.PanelTrigger:FireServer(unpack(args))
+
+  	end    
+}) Tab:AddButton({
+	Name = "break ghost",
+	Callback = function()
+      		local args = {
+    [1] = "/chicken",
+    [2] = "bamned_alt3"
+}
+
+game:GetService("ReplicatedStorage").Events.PanelTrigger:FireServer(unpack(args))
+local args = {
+    [1] = "/horror",
+    [2] = "bamned_alt3"
+}
+
+game:GetService("ReplicatedStorage").Events.PanelTrigger:FireServer(unpack(args))
+
+  	end    
+})
+
+getgenv().syn = syn
